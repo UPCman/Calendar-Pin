@@ -1,0 +1,179 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LytAñadirEvento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/AñadirEventoContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nombre del Evento"
+                android:layout_gravity="left"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/textPrimigenio" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="left"
+                android:ems="10"
+                android:id="@+id/tituloText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tipo de evento"
+        android:layout_gravity="left"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/text0" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reunión"
+            android:id="@+id/reunionButton"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarea"
+            android:id="@+id/tareaButton" />
+    </RadioGroup>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fecha de inicio"
+        android:layout_gravity="left"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textView1" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:datePickerMode = "spinner"
+        android:calendarViewShown="false"
+        android:id="@+id/datePicker" />
+
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Hora de inicio"
+        android:layout_gravity="left"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textView2" />
+
+
+            <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/timePickerInici" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Hora finalización"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="left"
+        android:id="@+id/textView3" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/timePickerFi" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Descripción"
+            android:layout_gravity="left"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left"
+            android:ems="10"
+            android:id="@+id/descripcionText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Recursividad"
+                android:layout_gravity="left"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/textView5" />
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Repetición Diaria"
+                    android:checked="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="left"
+                    android:id="@+id/checkRecursivoDiario" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Repetir una semana"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="50dp"
+                android:checked="false"
+                android:layout_gravity="left"
+                android:id="@+id/checkRecursivoSemanal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceptar"
+                android:id="@+id/buttonAceptar"
+                android:layout_marginBottom="50dp"
+                android:textSize="24sp"
+                android:layout_gravity="center" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

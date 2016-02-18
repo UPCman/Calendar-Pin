@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".SetmanaActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_navigation_arrow_back"
+        android:title="@string/action_navigation_arrow_back"
+        android:icon="@drawable/ic_action_navigation_arrow_back"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_navigation_arrow_forward"
+        android:title="@string/action_navigation_arrow_forward"
+        android:icon="@drawable/ic_action_navigation_arrow_forward"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_plus"
+        android:title="@string/action_plus"
+        android:icon="@drawable/ic_action_plus"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_events"
+        android:title="@string/action_events"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:title="@string/action_help"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+</menu>
